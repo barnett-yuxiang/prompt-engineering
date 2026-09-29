@@ -6,7 +6,7 @@ language models (LLMs) effectively.
 The repository is organized along two axes:
 
 - **Active directories** — actively maintained prompt collections, grouped by
-  purpose (e.g. `image/`).
+  purpose (e.g. `daily-use/`, `image/`).
 - **`legacy/`** — earlier vendor- and tool-specific material kept for
   reference (e.g. `openai/`, `gemini/`, `cursor/`).
 
@@ -14,7 +14,10 @@ The repository is organized along two axes:
 
 ```text
 .
+├── daily-use/    # Ready-to-use prompts and workflows for everyday tasks
 ├── image/        # Image-generation / photo-editing / style-transfer prompts
+├── skills/       # Reserved (empty)
+├── video/        # Reserved (empty)
 └── legacy/       # Archived vendor- and tool-specific collections
     ├── cursor/       # Notes and custom rules for the Cursor AI editor
     ├── gemini/       # Prompts specific to Google Gemini models
@@ -24,11 +27,22 @@ The repository is organized along two axes:
     └── general/      # Model-agnostic prompts and techniques
         ├── benchmark/        # Tasks for evaluating and comparing models
         ├── best-practices/   # Guidelines for writing effective prompts
-        ├── daily-use/        # Ready-to-use prompts for everyday tasks
         ├── exploration/      # Experiments with new techniques and models
         ├── methods/          # Prompting methods (Chain-of-Thought, ReAct, ...)
         └── thinking/         # Thinking frameworks and reasoning/persona prompts
 ```
+
+## `daily-use/`
+
+Ready-to-use prompts and workflows for everyday tasks. Each file gives a short
+usage scenario followed by the prompt itself.
+
+- [restate-goals-and-problem](daily-use/restate-goals-and-problem.md) — Have the model restate your goals and problem to align intent.
+- [read-and-summarize-article](daily-use/read-and-summarize-article.md) — Summarize articles and explain unfamiliar concepts.
+- [rewrite-article-and-explain-concepts](daily-use/rewrite-article-and-explain-concepts.md) — Rewrite an article in Chinese and add concept explanations to a doc.
+- [thinking-model-prompts](daily-use/thinking-model-prompts.md) — Templates for SWOT, Six Thinking Hats, PDCA, and other thinking models.
+- [code-security-questions](daily-use/code-security-questions.md) — Security-related questions for code review and learning.
+- [kids-english-music-video](daily-use/kids-english-music-video.md) — End-to-end workflow for a children's English music video.
 
 ## `image/`
 
@@ -66,8 +80,6 @@ Model-agnostic material, grouped by purpose:
   performance of different LLMs (reasoning, coding, and knowledge questions).
 - **`best-practices/`** — Guidelines and recommendations for writing effective
   prompts and getting the most out of LLMs.
-- **`daily-use/`** — Ready-to-use prompts and examples for everyday tasks and
-  workflows.
 - **`exploration/`** — Experiments with novel prompt-engineering techniques and
   probing the capabilities of different models.
 - **`methods/`** — Explanations of prompting methods such as Chain-of-Thought
