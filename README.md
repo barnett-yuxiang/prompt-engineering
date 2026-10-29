@@ -36,7 +36,7 @@ language models (LLMs) effectively.
 
 ## `skills/`
 
-- [skills-overview](skills/skills-overview.md) — Overview of global and project-level skills, grouped by source.
+- [skills-overview](skills/skills-overview.md) — Agent skills I use.
 
 ## `legacy/`
 
